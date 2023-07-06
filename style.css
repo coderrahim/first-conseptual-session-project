@@ -33,6 +33,9 @@ h1{
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.ptb{
+    padding: 50px 0px;
+}
 
 .main-header {
     display: flex;
@@ -104,9 +107,9 @@ header .main-header img{
 }
 
 /* ABOUT SECTION START */
-.about-us-section h1, title{
+.about-us-section h1, .title{
     text-align: center;
-    padding-top: 50px;
+    padding: 20px 0px;
     margin-bottom: 40px;
 }
 .about-us-main{
@@ -126,4 +129,27 @@ header .main-header img{
 }
 .about-us-main p{
     padding-right: 40px;
+}
+
+/* SERVICE SECTION START */
+
+.service-main{
+    display: flex;
+}
+.service-main .box{
+    text-align: center;
+    padding: 30px 50px;
+    box-shadow: -5px 20px 30px hsl(25, 63%, 67%);
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+.service-main img{
+    width: 50px;
+    color: #FF6B00;
+}
+.service-main p{
+    text-align: justify;
+}
+.service-main button{
+    
 }
