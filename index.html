@@ -12,7 +12,7 @@
         <div class="main-header container">
             <div class="left-side logo">
                 <a href="#">
-                    <img src="/logo/logo-light.png" alt="Logo">
+                    <img src="/logo/logo-dark.png" alt="Logo">
                 </a>
             </div>
             <div class="right-side">
@@ -42,7 +42,7 @@
             </div>
             <div class="right-side">
                 <a href="#">
-                    <img src="/images/banner-imgage.png" alt="Banner images">
+                    <img src="/images/CoderRahim.png" alt="Coderrahim">
                 </a>
             </div>
         </div>
@@ -51,14 +51,29 @@
 <!-- ABOUT SECTION START -->
 
     <section class="about-us-section bg-color ptb">
-        <h1 class="title">About US</h1>
+        <h1 class="title">About Me</h1>
         <div class="about-us-main container">
             <div class="left-side">
-                <img src="/images/car.png" alt="about">
+                <img class="radius-img" src="./images/CoderRahim.png" alt="about">
             </div>
             <div class="right-side">
                 <h2>Coder Rahim</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nobis accusamus quis iste veritatis? Minus ducimus cum tempore neque et.</p>
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">SSC</button>
+                  <button class="tablinks" onclick="openCity(event, 'Paris')">Diploma In Engineering</button>
+                  
+                </div>
+                
+                <div id="London" class="tabcontent">
+                  <h3>SSC</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae exercitationem nihil delectus vero eum? Aliquid deleniti totam soluta sequi.</p>
+                </div>
+                
+                <div id="Paris" class="tabcontent">
+                  <h3>Diploma In Computer Engineering</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, nisi accusamus. Excepturi exercitationem temporibus aspernatur. Eaque mollitia optio eos, nesciunt sunt quisquam quo harum, voluptas saepe nihil minus sequi repellendus?</p> 
+                </div>
+                
                 <a href="#contact">
                     <button id="btn-contact" type="button">Hire Me</button>
                 </a>
@@ -129,5 +144,25 @@
             <p><a href="#">&copy; All Right Reserved by Coder Rahim</a></p>
         </div>
     </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
 </body>
 </html>
