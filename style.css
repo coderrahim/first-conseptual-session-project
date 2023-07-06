@@ -7,12 +7,15 @@
 .container{
     width: 1080px;
     margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
 }
 body{
     background-color: #FFC994;
 }
 .bg-color{
-    background-color: #FFC088;
+    background-color: #ffdcba;
 }
 h1, h3, p {
     color: #101010;
@@ -20,11 +23,17 @@ h1, h3, p {
 h2{
     color: #FF6B00;
     margin: 20px 0;
+    font-size: 30px;
 }
 
 header{
-    box-shadow: 5px 5px 20px rgb(51, 255, 0);
+    box-shadow: 5px 5px 20px #f798459a;
 }
+h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .main-header {
     display: flex;
     height: 100px;
@@ -57,6 +66,7 @@ header .main-header img{
     color: #FF6B00;
     border: 1px solid #FF6B00;
 }
+
 /* BANNER AREA CSS */
 
 .banner-area{
@@ -66,13 +76,7 @@ header .main-header img{
     align-items: center;
 }
 
-.banner-area .left-side h1{
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.banner-area .left-side h2{
-    font-size: 30px;
-}
+
 .banner-area .left-side p{
     font-size: 20px;
     width: 80%;
@@ -96,15 +100,30 @@ header .main-header img{
     background-color: rgba(255, 255, 255, 0);
     color: #FF6B00;
     font-weight: bold;
-    box-shadow: 5px 5px 20px hsla(25, 100%, 50%, 0.568;    
+    box-shadow: 5px 5px 20px hsla(25, 100%, 50%, 0.568);    
 }
 
 /* ABOUT SECTION START */
-.about-us h2{
-    text-align:center;
-    display: block;
+.about-us-section h1, title{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 40px;
 }
-#about-us-img{
-    width: 100px;
-    height: 100px;
+.about-us-main{
+    display: flex;
+    padding: 20px 0px;
+}
+.about-us-main .left-side{
+   width: 50%;
+}
+.about-us-main .right-side{
+    width: 50%;
+    border-left: 3px solid rgba(255, 255, 255, 0.26);
+    padding-left: 20px;
+}
+.about-us-main img{
+    width: 400px;
+}
+.about-us-main p{
+    padding-right: 40px;
 }
